@@ -7,7 +7,7 @@
   <title>Седона</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header" data-test="header">
     <nav class="navigation">
 
       <a class="navigation-logo" href="#">
@@ -45,15 +45,15 @@
     </nav>
   </header>
 
-  <main class="main-index">
-    <section class="hero">
+  <main class="main-index" data-test="main">
+    <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Sedona</h1>
       <img class="hero-img" src="#" alt="Добро пожаловать в Седону. Потому что Гранд-Каньон отстой!">
       <p class="hero-subtitle subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
-    <section class="reasons">
+    <section class="reasons" data-test="advantages">
       <h2 class="visually-hidden">Список причин</h2>
       <ul class="reasons-list">
         <li class="reasons-item">
@@ -102,14 +102,14 @@
       </ul>
     </section>
 
-    <section class="search-hotel">
+    <section class="search-hotel" data-test="search">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <p class="search-hotel-subtitle subtitle">Заинтересовались?</p>
       <p class="search-hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="search-hotel-button button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
     </section>
 
-    <section class="subscription">
+    <section class="subscription" data-test="subscribe">
       <h2 class="subscription-subtitle subtitle">Подпишитесь на рассылку</h2>
       <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -120,7 +120,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <h2 class="visually-hidden">Контакты</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
