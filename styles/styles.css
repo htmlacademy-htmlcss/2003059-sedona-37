@@ -15,7 +15,28 @@
 }
 
 body {
+  margin: 0 auto;
+  width: 1200px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
+  font-weight: 400;
+  background-color: #F2F2F2;
+}
+
+
+
+.hero {
+  width: 100%;
+  height: 485px;
+  background-color: #1b0152;
+  background-image: url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
