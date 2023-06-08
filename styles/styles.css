@@ -81,6 +81,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .button-brown {
@@ -240,9 +241,9 @@ body {
 }
 
 .subscription-email {
-  font-size: 18px;
   line-height: 24px;
   color: #000000;
+  background-color: #F2F2F2;
 }
 
 .subscription-button {
@@ -252,6 +253,10 @@ body {
 }
 
 /* footer */
+
+.page-footer{
+background-color: #FFFFFF;
+}
 
 .social-list {
   list-style: none;
@@ -264,4 +269,140 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+
+/* Каталог */
+.main-catalog {
+  background-color: #FFFFFF;
+}
+
+.catalog-header {
+  background-color: #350909;
+  background-image: url("../images/catalog-background.jpg");
+  background-repeat: no-repeat;
+  height: 412px;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/* catalog-filter */
+
+.catalog-filter {
+  background-color: #350909;
+  color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.catalog-filter-item {
+  line-height: 23px;
+}
+
+.catalog-filter-input {
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.button-transparent {
+  background-color: transparent;
+}
+
+/* hotels */
+
+.hotels-subtitle {
+  text-align: left;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
+.hotel-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.hotel-stars {
+  background-image: url("../images/icons/hotel-stars.svg");
+  background-repeat: repeat-x;
+  background-size: 23px 17px;
+  width: 18px;
+  height: 17px;
+}
+
+.hotel-stars-2 {
+  width: 42px;
+}
+
+.hotel-stars-3 {
+  width: 66px;
+}
+
+.hotel-stars-4 {
+  width: 90px;
+}
+
+.hotel-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* pagination */
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.dots {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
