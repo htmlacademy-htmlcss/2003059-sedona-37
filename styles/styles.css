@@ -75,6 +75,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -124,6 +125,7 @@ body {
 
 .reasons-list {
   list-style: none;
+  text-align: center;
 }
 
 .darkblue-background {
@@ -147,13 +149,8 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
-}
-
-.reason-description {
-  text-align: center;
 }
 
 .reason-img {
