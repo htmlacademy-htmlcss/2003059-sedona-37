@@ -274,13 +274,6 @@ background-color: #FFFFFF;
   background-color: #FFFFFF;
 }
 
-.catalog-header {
-  background-color: #350909;
-  background-image: url("../images/catalog-background.jpg");
-  background-repeat: no-repeat;
-  height: 412px;
-}
-
 .catalog-title {
   font-weight: 700;
   font-size: 60px;
@@ -296,9 +289,11 @@ background-color: #FFFFFF;
 }
 
 /* catalog-filter */
-
-.catalog-filter {
+.filter-wrapper {
   background-color: #350909;
+  background-image: url("../images/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #FFFFFF;
 }
 
