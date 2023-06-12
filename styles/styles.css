@@ -60,6 +60,7 @@ body {
   width: 140px;
   height: 70px;
   z-index: 5;
+  margin-right: 28px;
 }
 
 .navigation-list {
@@ -177,6 +178,7 @@ body {
 .dark-background {
   background-color: #82B3D3;
   width: 1200px;
+  padding: 0;
 }
 
 .dark-background .reason-name,
