@@ -48,8 +48,13 @@ body {
   color: #000000;
 }
 
+.navigation {
+  display: flex;
+}
+
 .navigation-list {
   list-style: none;
+  display: flex;
 }
 
 .navigation-link {
@@ -184,16 +189,19 @@ body {
 .recommendation-item:first-child {
   background-image: url("../images/icons/icon-home.svg");
   background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .recommendation-item:nth-child(2) {
   background-image: url("../images/icons/icon-food.svg");
   background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .recommendation-item:last-child {
   background-image: url("../images/icons/icon-souvenir.svg");
   background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .recommendation-name {
