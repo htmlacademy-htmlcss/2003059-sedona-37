@@ -29,7 +29,6 @@ body {
   background-color: #F2F2F2;
 }
 
-/* временное решение */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -372,11 +371,12 @@ body {
 /* Каталог */
 
 .catalog-title {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  margin: 0;
 }
 
 .breadcrumbs {
@@ -386,6 +386,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 /* catalog-filter */
@@ -396,7 +397,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
-  padding: 0 70px;
+  padding: 35px 70px 73px;
+  margin-bottom: 50px;
 }
 
 .catalog-filter-form {
@@ -404,7 +406,14 @@ body {
   justify-content: space-between;
 }
 
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter-title {
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -418,6 +427,11 @@ body {
 
 .catalog-filter-item {
   line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-filter-input {
@@ -433,23 +447,26 @@ body {
 .hotels {
   width: 1060px;
   margin: 0 auto;
+  margin-bottom: 96px;
 }
 
 .sort-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  margin-bottom: 40px;
 }
 
-/* .hotels-title {
-  text-align: left;
-} */
+.hotels-title {
+  align-self: center;
+}
 
 .select-control {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .hotels-view-buttons {
@@ -461,6 +478,9 @@ body {
 .hotels-view {
   width: 48px;
   height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .hotels-view:first-child {
@@ -488,10 +508,18 @@ body {
   margin: 0;
   padding: 0;
   gap: 20px;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E6E6E6;
+  margin-bottom: 40px;
 }
 
 .hotel-card {
+  width: 340px;
   padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .hotel-link {
@@ -547,19 +575,29 @@ body {
 /* pagination */
 
 .pagination {
+  width: 400px;
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
+  gap: 8px;
+  margin-bottom: 60px;
 }
 
 .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .pagination-current {
@@ -577,6 +615,12 @@ body {
 
 .catalog-subscription {
   text-align: center;
+  padding-bottom: 104px;
+  margin-bottom: 48px;
+}
+
+.catalog-subscription-title {
+  margin-bottom: 20px;
 }
 
 /* Buttons and backgrounds */
