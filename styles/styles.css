@@ -54,7 +54,6 @@ body {
 
 .page-header {
   color: #000000;
-  height: 64px;
 }
 
 .navigation {
@@ -205,7 +204,6 @@ body {
 
 .reason-description {
   margin: 0;
-  max-width: 230px;
 }
 
 .reason-img {
@@ -215,10 +213,6 @@ body {
 }
 
 /* recommendation */
-
-.recommendation {
-  margin-bottom: 96px;
-}
 
 .recommendation-title {
   margin-bottom: 20px;
@@ -282,8 +276,9 @@ body {
 
 .search {
   text-align: center;
-  margin-bottom: 96px;
+  padding: 96px 300px;
 }
+
 .search-title {
   margin-bottom: 20px;
 }
@@ -291,7 +286,6 @@ body {
 .search-text {
   margin: 0 auto;
   margin-bottom: 54px;
-  max-width: 592px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -299,10 +293,7 @@ body {
 /* subscription */
 
 .subscription {
-  margin-bottom: 45px;
-  padding-top: 96px;
-  padding-bottom: 104px;
-  width: 100%;
+  padding: 96px 258px 104px;
   background-color: #1e227a;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -341,10 +332,11 @@ body {
 /* footer */
 
 .page-footer {
+  padding-top: 45px;
+  padding-bottom: 35px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 35px;
   width: 1060px;
   align-items: center;
 }
@@ -369,6 +361,7 @@ body {
 /* Каталог */
 
 .catalog-title {
+  margin: 0;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
@@ -442,9 +435,7 @@ body {
 /* hotels */
 
 .hotels {
-  width: 1060px;
-  margin: 0 auto;
-  margin-bottom: 96px;
+  padding: 0 70px;
 }
 
 .sort-wrapper {
@@ -612,9 +603,8 @@ body {
 }
 
 .catalog-subscription {
+  padding: 96px 258px 104px;
   text-align: center;
-  padding-bottom: 104px;
-  margin-bottom: 48px;
 }
 
 .catalog-subscription-title {
