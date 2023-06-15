@@ -651,6 +651,12 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.hotel-button {
+  display: inline-block;
+  width: 140px;
+  padding: 8px 0;
+}
+
 .button-dark {
   background-color: #82B3D3;
 }
