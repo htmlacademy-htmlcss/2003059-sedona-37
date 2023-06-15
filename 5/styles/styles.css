@@ -194,6 +194,7 @@ body {
 .reason-item-wrapper {
   width: 400px;
   padding: 102px 85px;
+  box-sizing: border-box;
 }
 
 .reason-name {
@@ -648,6 +649,12 @@ body {
   font-size: 20px;
   line-height: 36px;
   border-radius: 0 4px 4px 0;
+}
+
+.hotel-button {
+  display: inline-block;
+  width: 140px;
+  padding: 8px 0;
 }
 
 .button-dark {
