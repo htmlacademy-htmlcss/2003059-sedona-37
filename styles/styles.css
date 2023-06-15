@@ -194,6 +194,7 @@ body {
 .reason-item-wrapper {
   width: 400px;
   padding: 102px 85px;
+  box-sizing: border-box;
 }
 
 .reason-name {
