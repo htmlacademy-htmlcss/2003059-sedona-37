@@ -143,13 +143,13 @@ body {
 /* reasons */
 
 .title {
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
 }
 
 .text {
@@ -164,7 +164,6 @@ body {
 }
 
 .reasons-title {
-  margin: 0 auto;
   margin-bottom: 25px;
   max-width: 620px;
 }
@@ -222,7 +221,6 @@ body {
 }
 
 .recommendation-title {
-  margin: 0 auto;
   margin-bottom: 20px;
   max-width: 505px;
 }
@@ -371,7 +369,6 @@ body {
 /* Каталог */
 
 .catalog-title {
-  margin: 0;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
@@ -457,6 +454,7 @@ body {
 }
 
 .hotels-title {
+  margin: 0;
   align-self: center;
 }
 
