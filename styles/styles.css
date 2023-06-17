@@ -427,7 +427,6 @@ body {
 
 .catalog-filter-form {
   display: flex;
-  justify-content: space-between;
 }
 
 .catalog-filter-group {
@@ -435,7 +434,11 @@ body {
   margin: 0;
   padding: 0;
   margin-right: 70px;
-  min-width: 150px;
+  width: 150px;
+}
+
+.catalog-filter-group:nth-child(2) {
+  margin-right: 140px;
 }
 
 .catalog-filter-title {
@@ -456,21 +459,69 @@ body {
   margin-bottom: 16px;
 }
 
-.control {
-  padding-left: 16px;
-}
-
 .catalog-filter-item:last-child {
   margin-bottom: 0;
 }
 
+.control {
+  padding-left: 16px;
+}
+
+.catalog-filter-price {
+  max-width: 288px;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+
 .catalog-filter-input {
+  width: 143px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  background: #F2F2F2;
+  border: none;
+  padding: 12px 20px;
+  box-sizing: border-box;
 }
+
+.min-price {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.max-price {
+  border-radius: 0 4px 4px 0;
+}
+
+
+/* Ползунок в фильтрах - тестово */
+
+.range {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background-color: #FFFFFF;
+
+}
+
+.range::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.button-wrapper {
+  margin-top: 55px;
+}
+
 
 /* Hotels */
 
@@ -480,22 +531,26 @@ body {
 
 .sort-wrapper {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 
 .hotels-title {
   margin: 0;
   align-self: center;
+  margin-right: 200px;
 }
 
 .select-control {
+  width: 292px;
+  padding: 10px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  white-space: pre-line;
+  margin-right: 70px;
 }
 
 .hotels-view-buttons {
@@ -683,6 +738,15 @@ body {
 
 .subscription-button {
   border-radius: 0 4px 4px 0;
+}
+
+.button-filter {
+  display: block;
+  width: 191px;
+}
+
+.button-filter:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .hotel-button {
