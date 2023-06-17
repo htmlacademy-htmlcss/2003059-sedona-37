@@ -611,24 +611,34 @@ body {
   text-decoration: none;
 }
 
+.hotel-image {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .hotel-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   margin: 0;
+  margin-bottom: 16px;
 }
-
-/* Тестовые обертки в карточке товара
 
 .hotel-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.hotel-wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .hotel-wrapper p {
   margin: 0;
-} */
+}
 
 .hotel-stars {
   background-image: url("../images/icons/hotel-stars.svg");
@@ -654,6 +664,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 9px 22px;
+  background: #F2F2F2;
+border-radius: 4px;
 }
 
 /* Pagination */
