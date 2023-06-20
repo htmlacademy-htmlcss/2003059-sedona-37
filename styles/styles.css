@@ -197,6 +197,13 @@ body {
   box-sizing: border-box;
 }
 
+.reason-item-big {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
 .reason-item-wrapper {
   max-width: 400px;
   padding: 102px 85px;
@@ -310,6 +317,7 @@ body {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   color: #FFFFFF;
   text-align: center;
 }
@@ -781,10 +789,6 @@ body {
 }
 
 .dark-background {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  padding: 0;
   background-color: #82B3D3;
 }
 
