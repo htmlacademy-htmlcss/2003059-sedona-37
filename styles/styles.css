@@ -570,6 +570,7 @@ body {
 .sort-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .hotels-title {
@@ -603,6 +604,7 @@ body {
   height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .hotels-view-current {
@@ -631,7 +633,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 40px 0;
+  margin-bottom: 36px;
+  padding: 0;
+  padding-bottom: 40px;
   gap: 20px;
   border-bottom: 1px solid #E6E6E6;
   list-style: none;
@@ -719,7 +723,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 36px;
   gap: 8px;
   list-style: none;
 }
