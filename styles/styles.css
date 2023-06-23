@@ -439,6 +439,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -477,6 +478,7 @@ body {
   margin-right: 70px;
   width: 150px;
   border: none;
+  /* word-break: break-all; */
 }
 
 .catalog-filter-group:nth-child(2) {
@@ -672,7 +674,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .hotel-title {
@@ -683,7 +685,7 @@ body {
 }
 
 .hotel-price {
-  text-align: end;
+  justify-self: end;
 }
 
 .hotel-stars {
