@@ -214,6 +214,7 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .reason-item, .reason-item-wrapper {
@@ -254,6 +255,7 @@ body {
 
 .reason-description {
   margin: 0;
+  max-width: 230px;
 }
 
 .reason-img {
@@ -288,6 +290,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  word-wrap: break-word;
 }
 
 .recommendation-item {
@@ -482,9 +485,9 @@ body {
   margin: 0;
   padding: 0;
   margin-right: 70px;
-  width: 150px;
+  max-width: 152px;
   border: none;
-  /* word-break: break-all; */
+  word-break: break-all;
 }
 
 .catalog-filter-group:nth-child(2) {
@@ -492,6 +495,7 @@ body {
 }
 
 .catalog-filter-title {
+  padding: 0;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
