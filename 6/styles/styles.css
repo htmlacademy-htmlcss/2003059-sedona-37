@@ -208,8 +208,8 @@ body {
 }
 
 .reasons-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -217,16 +217,16 @@ body {
 }
 
 .reason-item, .reason-item-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   align-content: center;
   justify-content: center;
-  width: 400px;
   min-height:385px;
   padding: 85px;
 }
 
 .reason-item-big {
+  grid-template-columns: 1fr 2fr;
+  grid-column: 1/-1;
   width: 100%;
   padding: 0;
   background-color: #82B3D3;
@@ -235,6 +235,10 @@ body {
 .reason-item-big .reason-name,
 .reason-item-big .reason-description {
   color: #FFFFFF;
+}
+
+.reason-item:nth-child(5) {
+  grid-template-columns: 2fr 1fr;
 }
 
 .reason-name {
@@ -256,7 +260,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-
+  align-self: stretch;
   object-fit: cover;
 }
 
@@ -294,12 +298,14 @@ body {
 .recommendation-item:first-child {
   background-image: url("../images/icons/icon-home.svg");
   background-repeat: no-repeat;
-  background-position: center top 80px;}
+  background-position: center top 80px;
+}
 
 .recommendation-item:nth-child(2) {
   background-image: url("../images/icons/icon-food.svg");
   background-repeat: no-repeat;
-  background-position: center top 80px;}
+  background-position: center top 80px;
+}
 
 .recommendation-item:last-child {
   background-image: url("../images/icons/icon-souvenir.svg");
@@ -439,6 +445,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -477,6 +484,7 @@ body {
   margin-right: 70px;
   width: 150px;
   border: none;
+  /* word-break: break-all; */
 }
 
 .catalog-filter-group:nth-child(2) {
@@ -647,10 +655,9 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 212px repeat(4, min-content);
+  grid-template-rows: 212px auto repeat(3, min-content);
   row-gap: 16px;
   column-gap: 20px;
-  align-items: center;
   min-height: 438px;
   padding: 20px;
   border: 1px solid #E6E6E6;
@@ -672,7 +679,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .hotel-title {
@@ -683,7 +690,7 @@ body {
 }
 
 .hotel-price {
-  text-align: end;
+  justify-self: end;
 }
 
 .hotel-stars {
@@ -692,6 +699,7 @@ body {
   background-size: 23px 17px;
   width: 18px;
   height: 17px;
+  align-self: center;
 }
 
 .hotel-stars-2 {
