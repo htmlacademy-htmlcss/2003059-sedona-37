@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александра Остапенко](https://up.htmlacademy.ru/htmlcss/37/user/2003059).
-* Наставник: [Андрей Волошко](https://htmlacademy.ru/profile/id1655583).
+* Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037).
 
 ---
 
