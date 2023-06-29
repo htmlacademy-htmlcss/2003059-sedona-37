@@ -871,12 +871,10 @@ body {
 
 .button:hover,
 .button:focus {
-  background-color: #615048;
   outline: none;
 }
 
 .button:active {
-  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -914,6 +912,19 @@ body {
   align-self: center;
 }
 
+.button-main {
+  background-color: #756157;
+}
+
+.button-main:hover,
+.button-main:focus {
+  background-color: #615048;
+}
+
+.button-main:active {
+  background-color: #756157;
+}
+
 .button-dark {
   background-color: #82B3D3;
 }
@@ -933,25 +944,22 @@ body {
 }
 
 .button-transparent:hover {
-  background-color: transparent;
   opacity: 0.6;
 }
 
 .button-transparent:focus {
-  background-color: transparent;
-  opacity: 1;
   border: 3px solid #83B3D3;
+  opacity: 1;
 }
 
 .button-transparent:active {
-  background-color: transparent;
+  border: 3px solid transparent;
   opacity: 0.3;
 }
 
 .button-transparent:disabled {
   background-color: transparent;
   opacity: 0.1;
-  cursor: default;
 }
 
 .button-favorite {
