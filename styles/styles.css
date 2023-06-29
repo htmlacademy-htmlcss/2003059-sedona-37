@@ -735,7 +735,17 @@ body {
   cursor: pointer;
 }
 
+.hotels-view:hover,
 .hotels-view-current {
+  border: 2px solid #000000;
+}
+
+.hotels-view:focus {
+  outline: none;
+  border: 2px solid #68A2CA;
+}
+
+.hotels-view:active {
   border: 2px solid #000000;
 }
 
@@ -866,6 +876,19 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   border-radius: 4px;
+}
+
+.pagination-link:not(.pagination-current):hover,
+.pagination-link:not(.pagination-current):focus {
+  border: 1px solid #82B3D3;
+  background-color: #68A2CA;
+  color: #FFFFFF;
+}
+
+.pagination-link:not(.pagination-current):active {
+  border: none;
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
