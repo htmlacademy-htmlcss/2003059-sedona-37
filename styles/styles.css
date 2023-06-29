@@ -471,7 +471,6 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-
 /* Catalog */
 
 .catalog-title {
@@ -594,6 +593,18 @@ body {
   padding-left: 16px;
 }
 
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:focus {
+  opacity: 1;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
 .catalog-filter-price {
   max-width: 288px;
 }
@@ -617,14 +628,23 @@ body {
 
 .catalog-filter-input {
   width: 143px;
-  padding: 12px 20px;
+  padding: 10px 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  background: #F2F2F2;
-  border: none;
+  background-color: #F2F2F2;
+  border: 3px solid transparent;
+}
+
+.catalog-filter-input:hover {
+  background-color: #E6E6E6;
+}
+
+.catalog-filter-input:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
 }
 
 .min-price {
@@ -639,10 +659,20 @@ body {
 .range-button {
   width: 20px;
   height: 20px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.range-button:focus {
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.range-toggle:active {
+  border: 2px solid #83b3d3;
+  outline: none;
 }
 
 .button-wrapper {
@@ -678,6 +708,16 @@ body {
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+.select-control:hover,
+.select-control:focus {
+  outline: none;
+  border: 2px solid #68A2CA;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.30);
 }
 
 .hotels-view-buttons {
@@ -797,7 +837,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 4px;
 }
 
