@@ -112,6 +112,7 @@ body {
   padding: 0;
   list-style: none;
   align-items: center;
+  align-content: start;
 }
 
 .navigation-link {
@@ -153,6 +154,11 @@ body {
   max-width: 430px;
   margin-left: auto;
   justify-content: flex-end;
+}
+
+.navigation-user .navigation-link:hover,
+.navigation-user .navigation-link:focus {
+  transform: scale(1.1);
 }
 
 .user-search {
@@ -430,14 +436,24 @@ body {
 
 .subscription-email {
   width: 452px;
-  padding: 12px 20px;
+  padding: 11px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 4px 0 0 4px;
+}
+
+.subscription-email:hover {
+  background-color: #E6E6E6;
+}
+
+.subscription-email:focus {
+  outline: none ;
+  border: 3px solid #83B3D3;
+  background: #E6E6E6;
 }
 
 /* Footer */
@@ -714,7 +730,7 @@ body {
   outline: none;
 }
 
-.range-toggle:active {
+.range-button:active {
   border: 2px solid #83b3d3;
   outline: none;
 }
@@ -777,6 +793,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   cursor: pointer;
+  background-color: inherit;
 }
 
 .hotels-view:hover,
@@ -922,14 +939,14 @@ body {
   border-radius: 4px;
 }
 
-.pagination-link:not(.pagination-current):hover,
-.pagination-link:not(.pagination-current):focus {
+.pagination-link:not(.pagination-current, .dots):hover,
+.pagination-link:not(.pagination-current, .dots):focus {
   border: 1px solid #82B3D3;
   background-color: #68A2CA;
   color: #FFFFFF;
 }
 
-.pagination-link:not(.pagination-current):active {
+.pagination-link:not(.pagination-current, .dots):active {
   border: none;
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
