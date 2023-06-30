@@ -453,7 +453,7 @@ body {
 .subscription-email:focus {
   outline: none ;
   border: 3px solid #83B3D3;
-  background: #E6E6E6;
+  background-color: #E6E6E6;
 }
 
 /* Footer */
@@ -948,7 +948,7 @@ body {
 
 .pagination-link:not(.pagination-current, .dots):active {
   border: none;
-  background: #82B3D3;
+  background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
 
