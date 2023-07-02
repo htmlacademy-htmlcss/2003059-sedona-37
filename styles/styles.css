@@ -424,12 +424,12 @@ body {
 .subscription-form {
   display: flex;
   justify-content: center;
-  width: 684px;
+  max-width: 684px;
   margin: 0 auto;
 }
 
 .subscription-email {
-  width: 452px;
+  flex-grow: 1;
   padding: 11px 20px;
   font-family: inherit;
   font-size: 18px;
@@ -596,7 +596,7 @@ body {
 /* Filter */
 
 .filter-wrapper {
-  padding: 35px 70px 70px;
+  padding: 35px 70px 65px;
   background-color: #4e86ab;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
@@ -617,9 +617,9 @@ body {
   word-break: break-all;
 }
 
-.catalog-filter-group:nth-child(2) {
+/* .catalog-filter-group:nth-child(2) {
   margin-right: 150px;
-}
+} */
 
 .catalog-filter-title {
   padding: 0;
@@ -635,38 +635,76 @@ body {
   list-style: none;
 }
 
-.catalog-filter-item {
+.catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
-  line-height: 23px;
-}
-
-.catalog-filter-item:last-child {
-  margin-bottom: 0;
 }
 
 .control {
-  padding-left: 16px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
 }
 
 .control:hover {
   opacity: 0.6;
 }
 
-.control:focus {
+.control-input:focus + .control-mark {
   opacity: 1;
+  outline: 3px solid #83B3D3;
 }
 
 .control:active {
   opacity: 0.3;
 }
 
+.control-input:disabled + .control-mark {
+  background-color: #E6E6E6;
+  color:#E6E6E6;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: url("../images/icons/control-checkbox.svg");
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.control-label {
+  line-height: 23px;
+}
+
 .catalog-filter-price {
   max-width: 288px;
+  margin-left: auto;
 }
 
 .input-wrapper {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 44px;
 }
 
 .catalog-filter-label {
@@ -693,6 +731,12 @@ body {
   border: none;
 }
 
+.catalog-filter-input::-webkit-outer-spin-button,
+.catalog-filter-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .catalog-filter-input:hover {
   background-color: #E6E6E6;
 }
@@ -711,7 +755,20 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.range-button {
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
@@ -720,16 +777,30 @@ body {
   cursor: pointer;
 }
 
-.range-button:focus {
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
   outline: 3px solid #83b3d3;
 }
 
-.range-button:active {
+.range-toggle:active {
   outline: 2px solid #83b3d3;
 }
 
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
 .button-wrapper {
-  margin-top: 55px;
+  margin-top: 56px;
 }
 
 /* Hotels */
@@ -750,11 +821,17 @@ body {
   align-self: center;
 }
 
-.select-control {
+.select {
+  position: relative;
+  display: flex;
   width: 292px;
-  padding: 10px 15px;
   margin-left: auto;
-  margin-right: 70px;
+}
+
+.select-control {
+  width: 100%;
+  padding: 10px 18px;
+  padding-right: 40px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -762,6 +839,10 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: inherit;
+  appearance: none;
+  background-image: url("../images/icons/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }
 
 .select-control:hover,
@@ -781,6 +862,7 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   width: 160px;
+  margin-left: 70px;
 }
 
 .hotels-view {
@@ -1021,7 +1103,7 @@ body {
 }
 
 .button-filter:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .hotel-button {

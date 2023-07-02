@@ -74,17 +74,23 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -95,17 +101,23 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-group" value="hotel" checked> Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="housing-group" value="hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-group" value="motel"> Мотель
+                    <input class="visually-hidden control-input" type="radio" name="housing-group" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-group" value="apartments">Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="housing-group" value="apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -113,23 +125,29 @@
 
             <fieldset class="catalog-filter-group catalog-filter-price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <div class="input-wrapper">
-                <label class="catalog-filter-label">
-                  <input class="catalog-filter-input min-price" type="number" name="min-price" value="0">
-                  <span>от</span>
-                </label>
-                <label class="catalog-filter-label">
-                  <input class="catalog-filter-input max-price" type="number" name="max-price" value="9000">
-                  <span>до</span>
-                </label>
-              </div>
-              <div class="range-wrapper">
-                <button class="range-button" type="button">
-                  <span class="visually-hidden">Выбрать минимальную цену.</span>
-                </button>
-                <button class="range-button" type="button">
-                  <span class="visually-hidden">Выбрать максимальную цену.</span>
-                </button>
+
+              <div class="range">
+                <div class="input-wrapper">
+                  <label class="catalog-filter-label">
+                    <input class="catalog-filter-input min-price" type="number" name="min-price" value="0">
+                    <span>от</span>
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="catalog-filter-input max-price" type="number" name="max-price" value="9000">
+                    <span>до</span>
+                  </label>
+                </div>
+
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px;">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </fieldset>
 
@@ -146,11 +164,13 @@
           <h2 class="visually-hidden">Сортировка результата по фильтрам.</h2>
           <p class="hotels-title title">Найдено гостиниц: <span>38</span></p>
 
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
+          <div class="select">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+          </div>
 
           <div class="hotels-view-buttons">
             <button class="hotels-view hotels-view-current" type="button">
