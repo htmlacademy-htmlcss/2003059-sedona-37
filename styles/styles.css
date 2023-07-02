@@ -445,7 +445,7 @@ body {
 }
 
 .subscription-email:focus {
-  outline: none ;
+  outline: none;
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
 }
@@ -760,7 +760,7 @@ body {
 
 .select-control {
   width: 292px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin-left: auto;
   margin-right: 70px;
   font-family: inherit;
@@ -810,7 +810,7 @@ body {
 }
 
 .hotels-view:focus:not(:focus-visible) {
-  border: 2px solid #000000;
+  border: 2px solid #E5E5E5;
 }
 
 .hotels-view:focus-visible {
@@ -1087,11 +1087,11 @@ body {
 
 .button-transparent:focus:not(:focus-visible) {
   border: 3px solid transparent;
-  opacity: 1;
 }
 
 .button-transparent:focus-visible {
   border: 3px solid #68A2CA;
+  outline: none;
 }
 
 .button-transparent:active {
