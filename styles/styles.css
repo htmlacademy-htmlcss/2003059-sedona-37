@@ -724,15 +724,7 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.range-button:focus:not(:focus-visible) {
-  outline: none;
-}
-
-.range-button:focus-visible {
-  outline: 3px solid #83b3d3;
-}
-
-.range-wrapper .range-button:active {
+.range-button:active {
   outline: 2px solid #83b3d3;
 }
 
@@ -806,19 +798,11 @@ body {
 }
 
 .hotels-view:focus {
-  border: 2px solid #68A2CA;
-}
-
-.hotels-view:focus:not(:focus-visible) {
-  border: 2px solid #E5E5E5;
-}
-
-.hotels-view:focus-visible {
   outline: none;
   border: 2px solid #68A2CA;
 }
 
-.hotels-view-buttons .hotels-view:active {
+.hotels-view:active {
   border: 2px solid #000000;
 }
 
@@ -1083,15 +1067,6 @@ body {
 .button-transparent:focus {
   border: 3px solid #68A2CA;
   opacity: 1;
-}
-
-.button-transparent:focus:not(:focus-visible) {
-  border: 3px solid transparent;
-}
-
-.button-transparent:focus-visible {
-  border: 3px solid #68A2CA;
-  outline: none;
 }
 
 .button-transparent:active {
