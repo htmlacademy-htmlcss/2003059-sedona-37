@@ -160,6 +160,45 @@
         <span class="visually-hidden">Ссылка на страницу разработчика - HTMLAcademy.</span>
       </a>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
+
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <div class="search-field search-field-date">
+              <label class="search-field-label" for="date-arrival">Дата заезда:</label>
+              <input class="field" type="text" id="date-arrival" name="date-arrival" placeholder="27 апреля 2020">
+              <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+
+            <div class="search-field search-field-date">
+              <label class="search-field-label" for="date-departure">Дата выезда:</label>
+              <input class="field" type="text" id="date-departure" name="date-departure" placeholder="1 сентября 2023">
+              <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+
+            <div class="search-field search-field-people">
+              <label class="search-field-label" for="adults">Взрослые:</label>
+              <input class="field" type="number" id="adults" name="adults" placeholder="2">
+            </div>
+
+            <div class="search-field search-field-people">
+              <label class="search-field-label" for="children">Дети:</label>
+              <input class="field" type="number" id="children" name="children" placeholder="2">
+            </div>
+
+            <button class="search-field-button button button-dark" type="submit">Найти</button>
+          </form>
+
+        </section>
+      </div>
+    </div>
   </div>
 </body>
 </html>
