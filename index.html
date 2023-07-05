@@ -185,12 +185,52 @@
 
             <div class="search-field search-field-people">
               <label class="search-field-label" for="adults">Взрослые:</label>
-              <input class="field" type="number" id="adults" name="adults" placeholder="2">
+
+              <div class="wrapper-field-count">
+                <button class="number-button number-button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+
+                <input class="search-form-count field" type="number" id="adults" name="adults" value="2">
+
+                <button class="number-button number-button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <div class="search-field search-field-people">
-              <label class="search-field-label" for="children">Дети:</label>
-              <input class="field" type="number" id="children" name="children" placeholder="2">
+              <span class="search-field-label field-label-icon">
+                <label class="search-field-label" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-adults-count"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-adults-count">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+
+              <div class="wrapper-field-count">
+                <button class="number-button number-button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+
+                <input class="search-form-count field" type="number" id="children" name="adults" value="2">
+
+                <button class="number-button number-button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <button class="search-field-button button button-dark" type="submit">Найти</button>
