@@ -625,10 +625,6 @@ body {
   word-break: break-all;
 }
 
-/* .catalog-filter-group:nth-child(2) {
-  margin-right: 150px;
-} */
-
 .catalog-filter-title {
   padding: 0;
   margin-bottom: 32px;
@@ -721,15 +717,17 @@ body {
 
 .catalog-filter-label span {
   position: absolute;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 20px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-input {
+  -moz-appearance: textfield;
   width: 143px;
-  padding: 12px 20px;
+  padding: 12px 43px 12px 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -947,6 +945,11 @@ body {
   grid-column: 1/-1;
   color: #000000;
   text-decoration: none;
+}
+
+.hotel-link:hover,
+.hotel-link:focus {
+  opacity: .7;
 }
 
 .hotel-image {
@@ -1178,6 +1181,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.search-field-button:active {
+  background-color: #68A2CA;
+}
+
 .light-background {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -1275,9 +1282,8 @@ body {
 .search-form {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(3, min-content) 60px;
-  /* grid-template-rows: repeat(3, 48px) 60px; */
-  row-gap: 48px;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 23px;
   word-wrap: break-word;
 }
 
@@ -1293,15 +1299,10 @@ body {
   position: relative;
 }
 
-.search-field-date::after {
-  content: "";
+.search-field-date .field {
   background-image: url(../images/icons/calendar.svg);
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
 }
 
 .search-field-label {
@@ -1334,17 +1335,10 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.field::placeholder {
-  color: #000000;
-  opacity: .6;
-}
-
 .field-message {
   grid-column: 2/-1;
   font-size: 16px;
   padding: 0 20px;
-  position: absolute;
-  bottom: -25px;
 }
 
 .field-message-error {
@@ -1357,6 +1351,7 @@ body {
 
 .search-field-people:nth-child(2n) {
   justify-self: end;
+  align-self: start;
 }
 
 .wrapper-field-count {
@@ -1406,8 +1401,9 @@ body {
 }
 
 .count-field {
+  -moz-appearance: textfield;
   border-radius: 0;
-  padding: 14px 4px;
+  padding: 12px 4px;
   text-align: center;
   outline: none;
   z-index: 1;
@@ -1491,8 +1487,6 @@ body {
   border-radius: 10px;
   font-size: 20px;
   line-height: 24px;
-}
-
-.search-field-button:active {
-  background-color: #68A2CA;
+  padding: 18px;
+  margin-top: 25px;
 }
