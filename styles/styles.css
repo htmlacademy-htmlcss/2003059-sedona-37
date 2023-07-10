@@ -314,8 +314,8 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  align-self: stretch;
-  object-fit: cover;
+  align-self: start;
+  object-fit: contain;
 }
 
 /* Recommendation */
@@ -745,7 +745,8 @@ body {
 .catalog-filter-label span {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
   right: 20px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
@@ -766,7 +767,8 @@ body {
 
 .catalog-filter-input::-webkit-outer-spin-button,
 .catalog-filter-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+    appearance: none;
   margin: 0;
 }
 
@@ -881,7 +883,9 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: inherit;
-  appearance: none;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+      appearance: none;
   background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
@@ -972,7 +976,9 @@ body {
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 212px 1fr;
   row-gap: 16px;
-  column-gap: 20px;
+  -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+      column-gap: 20px;
   min-height: 438px;
   padding: 20px;
   border: 1px solid #E6E6E6;
@@ -1336,6 +1342,7 @@ body {
 .search-form {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, -webkit-min-content);
   grid-template-rows: repeat(4, min-content);
   row-gap: 23px;
   word-wrap: break-word;
@@ -1344,7 +1351,9 @@ body {
 .search-field {
   display: grid;
   grid-template-columns: 122px 1fr;
-  column-gap: 15px;
+  -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+      column-gap: 15px;
   row-gap: 4px;
 }
 
@@ -1482,7 +1491,8 @@ body {
 
 .count-field::-webkit-outer-spin-button,
 .count-field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+    appearance: none;
   margin: 0;
 }
 
@@ -1516,7 +1526,8 @@ body {
   top: 100%;
   margin-top: 14px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   z-index: 3;
   color: #FFFFFF;
   font-size: 16px;
