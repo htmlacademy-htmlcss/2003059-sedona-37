@@ -104,6 +104,10 @@ body {
   margin-bottom: -10px;
 }
 
+.logo:hover {
+  opacity: .8;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -187,6 +191,11 @@ body {
   color: #FFFFFF;
   background-color: #7DB54F;
   border-radius: 12px;
+}
+
+.user-search:hover,
+.user-favorite:hover {
+  opacity: .6;
 }
 
 /* Main */
